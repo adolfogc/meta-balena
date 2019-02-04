@@ -1,6 +1,29 @@
 Change log
 -----------
 
+# v2.30.0
+## (2019-02-04)
+
+* Configure systemd tmpfiles to ignore supervisor tmp directories [Andrei Gherzan]
+* Fixed "Can't have overlapping partitions." error in flasher [Alexandru Costache]
+* Define default DNS servers behaviour with and without google DNS [Andrei Gherzan]
+* Update balena-supervisor to v9.4.2 [Cameron Diver]
+* Fix for some warnings [Zubair Lutfullah Kakakhel]
+* Fix tini filename after balena-engine rename [Andrei Gherzan]
+* Fix nm dispatcher hook when there are no custom ntp servers in config.json [Zubair Lutfullah Kakakhel]
+* Improve persistent logging systemd service dependencies [Zubair Lutfullah Kakakhel]
+* Update balena-supervisor to v9.3.0 [Cameron Diver]
+* Use the new revision for balena source code [Florin Sarbu]
+* Add a workaround for a bug where the chronyc online command in network manager hook would get stuck and eat cpu cycles [Zubair Lutfullah Kakakhel]
+* Fix img to rootfs dependency when img is invalidated [Andrei Gherzan]
+* Have boot partition type configurable as FAT32 [Andrei Gherzan]
+* Deprecate morty and krogoth [Zubair Lutfullah Kakakhel]
+* Deploy kernel source as a build artifact as well for external module compilation [Zubair Lutfullah Kakakhel]
+* kernel-devsrc: Tarball up the kernel source and deploy it. [Zubair Lutfullah Kakakhel]
+* kernel-modules-headers: Use the build directory for artifacts [Zubair Lutfullah Kakakhel]
+* docs: Add documentation on nested changelogs [Giovanni Garufi]
+* VersionBot: update upstream name and url [Giovanni Garufi]
+
 # v2.29.0
 ## (2018-12-19)
 
